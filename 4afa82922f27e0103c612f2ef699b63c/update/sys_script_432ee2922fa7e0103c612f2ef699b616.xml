@@ -12,7 +12,7 @@
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
         <collection>x_608604_wish_list_wish_item</collection>
-        <condition/>
+        <condition>current.Item.changes() || current.request.changes() || current.operation() == 'insert' || current.quantity.changes() </condition>
         <description/>
         <execute_function>false</execute_function>
         <filter_condition table="x_608604_wish_list_wish_item">requester=^EQ<item endquery="false" field="requester" goto="false" newquery="false" operator="=" or="false" value=""/>
@@ -40,15 +40,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>432ee2922fa7e0103c612f2ef699b616</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Validate Quantity</sys_name>
         <sys_overrides/>
         <sys_package display_value="Wish List" source="x_608604_wish_list">4afa82922f27e0103c612f2ef699b63c</sys_package>
         <sys_policy/>
         <sys_scope display_value="Wish List">4afa82922f27e0103c612f2ef699b63c</sys_scope>
         <sys_update_name>sys_script_432ee2922fa7e0103c612f2ef699b616</sys_update_name>
-        <sys_updated_by>fred.luddy</sys_updated_by>
-        <sys_updated_on>2021-04-18 15:35:41</sys_updated_on>
+        <sys_updated_by>carol.coughlin</sys_updated_by>
+        <sys_updated_on>2021-04-18 15:49:58</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
